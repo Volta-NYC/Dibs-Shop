@@ -1,62 +1,51 @@
-# Purpose
-This repository is the base template that should be used for all future businesses, including basic files such as navbar, footer, and other configs.
+# Dibs Shop Static Website
 
-# Business Name
+Single-page static site for Dibs Shop, a vintage and new home goods / gift shop in Park Slope, Brooklyn. All business facts and copy details come from `files/info.md`.
 
-Replace this README with business-specific details.
+## Files
 
----
+- `index.html` - Semantic one-page site with hero, story, product categories, visit, press, and footer sections.
+- `styles.css` - Local font loading, responsive layout, colors, and visual styling.
+- `public/images/` - Local image assets. No decorative external image URLs are used.
+- `public/fonts/` - Local copies of the Google font files used by the site.
+- `files/info.md` - Source research document.
 
-## 🚀 Overview
+## Images
 
-Short description of the business and what this website is for.
+Real downloaded assets:
 
-Example:
-"This website serves as the official online presence for [Business Name], showcasing services, contact information, and brand identity."
+- `public/images/storefront-exterior.jpg` - Yelp/MapQuest storefront image.
+- `public/images/shop-interior.png` - Original Park Slope Pulse / Cool Hand Movers Dibs image.
+- `public/images/shop-interior-1600.jpg` - Optimized local derivative used on the site for faster loading.
+- `public/images/dibs-yellow-tableware.jpg` - Dibs-specific image found in the Cool Hand Movers gift guide page.
 
----
+Placeholder images:
 
-## 🛠 Tech Stack
+- None. All displayed images are real local files.
 
-- Next.js (App Router)
-- TypeScript
-- Tailwind CSS
-- Hosted on Vercel
+Skipped media:
 
----
+- The Park Slope Pulse cover image was a Cool Hand Movers promo image, not a Dibs Shop image.
+- Other Cool Hand Movers gift guide image candidates belonged to unrelated businesses and were not saved into `public/images/`.
 
-## 📂 Project Structure
+## Owner Still Needs To Provide
 
-- `src/app` → App Router (homepage, layout, globals)
-- `src/app/pages` → Site pages (About, Contact, etc.)
-- `src/lib/components` → Shared UI components (Navbar/Footer)
-- `public` → Static assets
+- Confirmed hours.
+- Phone number, if they want one published.
+- Email address, if they want one published.
+- Official logo or wordmark.
+- More high-resolution interior, exterior, product, and owner photos.
+- Any official online shop URL, if one exists.
+- Confirmation on whether prints should be listed separately from art.
 
----
+## Running Locally
 
-## 🧑‍💻 Development
-
-Install dependencies:
-
-```bash
-npm install
-npm install --save-dev @types/react
-```
-
-Run locally:
+Open `index.html` directly in a browser, or serve the folder with any static server:
 
 ```bash
-npm run dev
+python3 -m http.server 4173
 ```
 
----
+Then visit `http://localhost:4173`.
 
-## ✏️ Customization Checklist
-
-- [ ] Replace Business Name in navbar + footer
-- [ ] Update metadata in `src/app/layout.tsx`
-- [ ] Replace homepage content (`src/app/page.tsx`)
-- [ ] Update About + Contact pages (`src/app/pages/*`)
-- [ ] Replace favicon + assets in `public/`
-- [ ] Update SEO metadata
-- [ ] (Optional) Update Volta credit link text / URL in the footer
+The Google Maps iframe in the Visit section is the only external embed, used as a functional map rather than decorative media.
